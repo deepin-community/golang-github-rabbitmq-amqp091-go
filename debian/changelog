@@ -1,5 +1,40 @@
-template-repository (1.0-1) unstable; urgency=medium
+golang-github-rabbitmq-amqp091-go (1.10.0-1) unstable; urgency=medium
 
-  * Initial release
+  * New upstream release
+  * Update Standards-Version to 4.7.0 in d/control (no changes needed)
+  * Update years in d/copyright
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Mathias Gibbens <gibmat@debian.org>  Sat, 25 May 2024 20:21:13 +0000
+
+golang-github-rabbitmq-amqp091-go (1.9.0-1) unstable; urgency=medium
+
+  * New upstream release
+    - Drop patch applied upstream
+
+ -- Mathias Gibbens <gibmat@debian.org>  Sat, 07 Oct 2023 15:42:37 +0000
+
+golang-github-rabbitmq-amqp091-go (1.8.1-2) unstable; urgency=medium
+
+  * Fix test failure on 32bit architectures
+
+ -- Mathias Gibbens <gibmat@debian.org>  Fri, 16 Jun 2023 23:46:23 +0000
+
+golang-github-rabbitmq-amqp091-go (1.8.1-1) unstable; urgency=medium
+
+  * New upstream release
+  * Update Standards-Version in d/control (no changes needed)
+  * Update years in d/copyright
+
+ -- Mathias Gibbens <gibmat@debian.org>  Sun, 11 Jun 2023 23:34:25 +0000
+
+golang-github-rabbitmq-amqp091-go (1.5.0-2) unstable; urgency=medium
+
+  * Source-only upload for migration
+
+ -- Mathias Gibbens <gibmat@debian.org>  Sat, 03 Dec 2022 14:05:32 +0000
+
+golang-github-rabbitmq-amqp091-go (1.5.0-1) unstable; urgency=medium
+
+  * Initial release (Closes: #1024728)
+
+ -- Mathias Gibbens <gibmat@debian.org>  Thu, 24 Nov 2022 00:27:19 +0000

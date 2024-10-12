@@ -1,15 +1,29 @@
-Source: template-repository
-Section: unknown
+Source: golang-github-rabbitmq-amqp091-go
+Maintainer: Debian Go Packaging Team <team+pkg-go@tracker.debian.org>
+Uploaders: Mathias Gibbens <gibmat@debian.org>
+Section: golang
+Testsuite: autopkgtest-pkg-go
 Priority: optional
-Maintainer: Tsic404 <liuheng@deepin.org>
-Build-Depends: debhelper (>= 11)
-Standards-Version: 4.1.3
-Homepage: https://github.com/deepin-community/template-repository
-#Vcs-Browser: https://salsa.debian.org/debian/deepin-community-template-repository
-#Vcs-Git: https://salsa.debian.org/debian/deepin-community-template-repository.git
+Build-Depends: debhelper-compat (= 13),
+               dh-golang,
+               golang-any,
+               golang-uber-goleak-dev
+Standards-Version: 4.7.0
+Vcs-Browser: https://salsa.debian.org/go-team/packages/golang-github-rabbitmq-amqp091-go
+Vcs-Git: https://salsa.debian.org/go-team/packages/golang-github-rabbitmq-amqp091-go.git
+Homepage: https://github.com/rabbitmq/amqp091-go
+Rules-Requires-Root: no
+XS-Go-Import-Path: github.com/rabbitmq/amqp091-go
 
-Package: template-repository
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Package: golang-github-rabbitmq-amqp091-go-dev
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends},
+         golang-uber-goleak-dev
+Description: Go client for AMQP 0.9.1 (library)
+ This is a Go AMQP 0.9.1 client maintained by the RabbitMQ core team.
+ It was originally developed by Sean Treadway.
+ .
+ The library provides a functional interface that closely represents
+ the AMQP 0.9.1 model targeted to RabbitMQ as a server. This includes
+ the minimum necessary to interact the semantics of the protocol.
